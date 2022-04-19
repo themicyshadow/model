@@ -1,0 +1,45 @@
+patch
+{
+	include "materials/models/survivors/survivors_it_shared.vmt"
+	insert
+	{
+	"$basetexture" "mowgli/rio_Futaba/tex"
+
+	"$phong" "1"
+	"$basemapalphaphongmask" "1"
+	"$basemapluminancephongmask" "1"
+	"$phongexponenttexture" "mowgli/shared/exponent_generic_alt"
+	"$phongboost" ".15"
+	"$phongexponent" "12"
+	"$phongfresnelranges"	"[1 2 3]"
+	"$halflambert" "1"
+	"$nodecal"	"1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "5"
+	"$rimlightboost" "1"
+	"$rimmask" "1"
+
+	"$blendtintbybasealpha"	"1"
+	"$blendtintcoloroverbase"	"0"
+	"$colortint_base"		"{ 115 190 225 }"
+	"$color2"			"{ 115 190 225 }"
+	"$colortint_tmp"		"[0 0 0]"
+
+	"Proxies"
+	{
+		"ItemTintColor"
+		{
+			"resultVar"		"$colortint_tmp"
+		}
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1"		"$colortint_tmp"
+			"srcVar2"		"$colortint_base"
+			"resultVar"	"$color2"
+		}
+	}
+
+	"$ambientocclusion" ".75"
+	}
+}

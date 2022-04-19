@@ -1,0 +1,25 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "mowgli/rio_Futaba/tex"
+                "$bumpmap"    "mowgli/rio_Futaba/normal"
+
+	"$color2" "1.25"
+
+	"$phong" "1"
+	"$phongalbedotint" "1"
+	"$phongexponenttexture" "mowgli/shared/exponent_generic_alt"
+	"$phongexponent" "5"
+	"$phongboost" ".4"
+	"$phongfresnelranges"	"[1 2 3]"
+	"$halflambert" "1"
+	"$nodecal"	"1"
+
+	"$lightwarptexture"	"mowgli/shared/lightwrapper_lightwarp"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "5"
+	"$rimlightboost" "1"
+	"$rimmask" "1"
+
+	"$ambientocclusion" ".75"
+}
